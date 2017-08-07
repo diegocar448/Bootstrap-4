@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Popovers e tooltips</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 mt-3">
+				<button type="button" class="btn btn-primary" title="Um <b>texto</b> auxiliar" data-toggle="tooltip" data-placement="bottom" data-delay="500" data-animation="false" data-html="true" data-trigger="click">Botão qualquer</button><!-- com data-placement="right" mudar a direção do tooltip // altera tambem o tempo para aparecer data-delay="500" // tbm pode desabilitar animação //dentro do title da para colocar html tbm basta colocar o data-html="true" -->
+
+				<!-- Mudar fazendo ele aparecer no clique data-trigger="click" -->
+
+
+				<button type="button" class="btn btn-primary" title="Um <b>texto</b> auxiliar" data-toggle="popover" data-placement="right" data-delay="500" data-animation="false" data-html="true" data-trigger="click" data-content="Conteudo da minha imagem">Botão qualquer</button>
+
+				<!-- para alterar entre tooltip e popover basta adicionar o atributo data-content="Conteudo da minha imagem" 
+
+				data-toggle="popover"
+
+				$('[data-toggle="popover"]').popover();
+
+				-->
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+	<script src="js/tether.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); <!-- //Pegue todos elementos que tiverem o data-toggle="tooltip e rodem o tooltip" -->
+
+			$('[data-toggle="popover"]').popover();
+		})
+	</script>
+
+</body>
+</html>

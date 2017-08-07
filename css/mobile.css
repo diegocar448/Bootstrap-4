@@ -1,0 +1,7 @@
+/*Media query*/
+/*ajustar e adaptar melhor para dispositivos mobile */
+@media (max-width: 400px){
+	html{
+		font-size: 15px;
+	}
+}

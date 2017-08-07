@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Collapse</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<!-- <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#conteudoOculto">
+					Mostrar conteúdo						
+				</button> -->
+				
+
+				<a class="btn btn-danger" data-toggle="collapse" href="#conteudoOculto">
+					Mostrar conteúdo						
+				</a> 
+
+
+				<div class="collapse" id="conteudoOculto">
+					<h1 class="display-4">Conteúdo ocultado</h1>
+				</div>
+
+
+
+				<div id="groupAccordion">
+					<div class="card">
+						<div class="card-header">
+							<h4>
+								<a href="#mod1" data-toggle="collapse" data-parent="#groupAccordion">Módulo 1</a> <!-- data-parent é para mostrar dentro de qual grupo ele esta -->
+							</h4>
+						</div>
+						
+						<div class="collapsein" id="mod1"> <!-- Colocando o in a caixa do modulo 1 ja inicia aberta -->
+							<div class="card-block"> <!-- O card-block da um alinhamento aumentando o espaço em cima e embaixo -->
+								conteúdo do módulo 1
+							</div>
+						</div>
+					</div>
+
+
+					<div class="card">
+						<div class="card-header">
+							<h4>
+								<a href="#mod2" data-toggle="collapse" data-parent="#groupAccordion">Módulo 2</a> <!-- data-parent é para mostrar dentro de qual grupo ele esta -->
+							</h4>
+						</div>
+						
+						<div class="collapse" id="mod2">
+							<div class="card-block">
+								conteúdo do módulo 2
+							</div>
+						</div>
+					</div>
+
+
+					<div class="card">
+						<div class="card-header">
+							<h4>
+								<a href="#mod3" data-toggle="collapse" data-parent="#groupAccordion">Módulo 3</a> <!-- data-parent é para mostrar dentro de qual grupo ele esta -->
+							</h4>
+						</div>
+						
+						<div class="collapse" id="mod3">
+							<div class="card-block">
+								conteúdo do módulo 3
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

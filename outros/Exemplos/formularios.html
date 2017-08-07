@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulários</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control">
+					</div>
+
+					<div class="form-group">
+						<select class="form-control" name="" id="">
+							<option class="form-control" value="" >option</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+					</div>
+
+					<div class="form-group">
+						<input type="file" class="form-control-file"> <!-- Adicionado o file no form-control-file para ter compatibilidade em todos os navegadores -->
+					</div>
+
+					<div class="form-group">
+						<div class="form-check">
+							<label class="form-check-label"> <!-- adiciona o label deixando form-check-label para da efeito de clique também no nome depois do input -->
+								<input type="checkbox" class="form-check-input"> Diego Cardoso <!-- form-check-input para alinha o padding -->
+							</label>
+						</div>
+					</div>
+						
+					<div class="form-group">
+						<div class="form-check">
+							<label class="form-check-label"> <!-- adiciona o label deixando form-check-label para da efeito de clique também no nome depois do input -->
+								<input type="radio" class="form-check-input"> Diego Cardoso
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input">
+							<span class="custom-control-indicator"></span> <!-- Precisa adicionar o custom-control-indicator e o description para que ele apareça no navegador para ficar sem texto tem que colocar o &nbsp; -->
+							<span class="custom-control-description">Diego Cardoso</span>
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span> <!-- Precisa adicionar o custom-control-indicator e o description para que ele apareça no navegador para ficar sem texto tem que colocar o &nbsp; -->
+							<span class="custom-control-description">Diego Cardoso</span>				
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input">
+							<span class="custom-control-indicator"></span> <!-- Precisa adicionar o custom-control-indicator e o description para que ele apareça no navegador para ficar sem texto tem que colocar o &nbsp; -->
+							<span class="custom-control-description">Diego Cardoso</span>				
+						</label>
+					</div>					
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

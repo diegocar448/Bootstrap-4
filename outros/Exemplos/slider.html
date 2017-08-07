@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Slider!</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="carousel slide" id="slider" data-ride="carousel" data-interval="1000"> <!-- Todo carossel precisa ter a class="carousel slide" e o id="" o data-ride="carousel" para ativar o carousel, o data-interval e opcional é para colocar o time do coroulsel -->
+					
+					<!-- São as barrinha para mudar o slide é opcional -->
+					<ol class="carousel-indicators"><!--Agora vamos adicionar a lista os elementos do carousel -->
+						<li data-target="#slider" data-slide-to="0" class="active"></li><!-- data-target vou definir qual carousel estamos nos referindo o mesmo que o id, data-slide-to="0" para qual slide vai-->
+						<li data-target="#slider" data-slide-to="1"></li>
+						<li data-target="#slider" data-slide-to="2"></li> 
+					</ol>
+
+					<!-- Agora vamos criar o conteu	do do slider -->
+					<div class="carousel-inner">
+
+						
+
+						<!-- Aqui adicionamos imagem ao nosso carousel -->
+						<div class="carousel-item active">
+							<!--Texto com imagem -->
+							<div class="carousel-caption">
+								<h3>asdadadadsaad</h3>
+								<p>iuweruwieurowiurowriuwou</p>
+							</div>
+							<img src="http://placehold.it/1000x300" alt="Primeiro slide">
+						</div>
+						
+						
+
+						<div class="carousel-item">
+							<img src="http://placehold.it/1000x300" alt="Primeiro slide">
+						</div>
+
+						<div class="carousel-item">
+							<img src="http://placehold.it/1000x300" alt="Primeiro slide">
+						</div>						
+					</div>
+
+					<!-- Setinha a esquerda do carousel tbm opcional -->
+					<a class="left carousel-control" href="#slider" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+
+					<a class="right carousel-control" href="#slider" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
